@@ -1,5 +1,9 @@
 const express = require("express");
+const cors = require("cors"); // Importa il modulo CORS
 const app = express();
+
+// Abilita CORS
+app.use(cors());
 
 // Redirect verso il link Pastebin
 app.get("/", (req, res) => {
